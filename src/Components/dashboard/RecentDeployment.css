@@ -1,0 +1,63 @@
+.recent-deployments {
+  margin-top: 30px;
+  background: #1d2636;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.deployments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.deployments-header h2 {
+  color: white;
+}
+
+.deployments-header button {
+  background: transparent;
+  color: #3b82f6;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #273142;
+}
+
+th {
+  color: #bfc9d9;
+  text-align: left;
+  padding: 15px;
+}
+
+td {
+  color: white;
+  padding: 15px;
+  border-top: 1px solid #313d50;
+}
+
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.success {
+  background: rgba(34, 197, 94, .2);
+  color: #22c55e;
+}
+
+.failed {
+  background: rgba(239, 68, 68, .2);
+  color: #ef4444;
+}

@@ -1,0 +1,76 @@
+.navbar{
+    height:80px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+/* Left */
+
+.navbar-left h2{
+    font-size:28px;
+}
+
+.navbar-left p{
+    color:#64748b;
+    font-size:14px;
+    margin-top:5px;
+}
+
+/* Search */
+
+.navbar-search input{
+    width:320px;
+    padding:12px 16px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    outline:none;
+}
+
+/* Right */
+
+.navbar-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+/* Notification */
+
+.notification{
+    font-size:22px;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+/* Profile */
+
+.navbar-profile{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.avatar{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+
+.profile-info p{
+    font-weight:bold;
+}
+
+.profile-info small{
+    color:#64748b;
+}

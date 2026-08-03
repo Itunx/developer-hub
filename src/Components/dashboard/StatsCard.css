@@ -1,0 +1,36 @@
+.stats-card {
+  background: #2d333b;
+  border-radius: 18px;
+  padding: 24px;
+  min-height: 140px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+
+  transition: 0.3s;
+}
+
+.stats-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.stats-icon {
+  font-size: 28px;
+}
+
+.stats-content h4 {
+  color: #b8c1cc;
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.stats-content h2 {
+  color: white;
+  font-size: 34px;
+  margin: 0;
+  font-weight: 700;
+}
