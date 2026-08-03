@@ -1,3 +1,6 @@
+
+import "./FeatureCard.css";
+
 type FeatureCardProps = {
   icon: string;
   title: string;
@@ -10,6 +13,7 @@ const FeatureCard = ({
   description,
 }: FeatureCardProps) => {
   return (
+
     <div className="feature-card">
       <div className="feature-icon">
         {icon}

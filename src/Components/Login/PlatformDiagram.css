@@ -1,0 +1,78 @@
+/* ==========================
+   Platform Diagram
+========================== */
+
+.platform-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+.diagram-center {
+    position: relative;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cloud {
+    position: absolute;
+
+    top: -25px;
+
+    padding: 10px 20px;
+
+    border-radius: 999px;
+
+    background: #1e293b;
+
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.diagram-icon {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #16233d;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    transition: .3s;
+}
+
+.diagram-icon:hover {
+    transform: scale(1.05);
+
+    border-color: #3b82f6;
+}
+
+.kubernetes {
+    position: absolute;
+    top: 0;
+}
+
+.terraform {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+
+.github {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}

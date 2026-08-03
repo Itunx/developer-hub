@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
  import Button from "../../Button";
 import SocialLogin from "./SocialLogin";
 import { useNavigate } from "react-router-dom";
+import "./LoginForm.css";
 
 const Card = ({ children }: { children: ReactNode }) => (
   <div className="card">{children}</div>

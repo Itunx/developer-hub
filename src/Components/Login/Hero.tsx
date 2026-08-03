@@ -1,5 +1,5 @@
 
-import "./styles/Hero.css";
+import "./Hero.css";
 const Hero = () => {
   return (
     <div className="hero-content">

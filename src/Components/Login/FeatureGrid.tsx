@@ -1,3 +1,4 @@
+import "./FeatureGrid.css";
 import FeatureCard from "./FeatureCard";
 
 const features = [

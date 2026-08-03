@@ -1,3 +1,5 @@
+
+import "./PlatformStats.css";
 const PlatformStats = () => {
   return (
     <div className="platform-stats">
