@@ -1,6 +1,6 @@
 
 import { useNavigate } from "react-router-dom";
-
+import "./SocialLogin.css";
 const SocialLogin = () => {
   const navigate = useNavigate();
 

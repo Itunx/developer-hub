@@ -1,0 +1,29 @@
+/* ==========================
+   Social Login
+========================== */
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    margin-top: 24px;
+}
+
+.social-login button {
+    background: #1e293b;
+    color: white;
+}
+
+.signup-text {
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #94a3b8;
+}
+
+.signup-text a {
+    color: #38bdf8;
+    text-decoration: none;
+}
