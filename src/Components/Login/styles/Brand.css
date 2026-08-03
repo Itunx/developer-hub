@@ -1,0 +1,54 @@
+/* ==========================
+   Brand
+========================== */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.brand p {
+    color: #94a3b8;
+}
+
+.brand-subtitle {
+    margin-top: 12px;
+    color: #9ca3af;
+    font-size: 1rem;
+}
+
+.idp {
+    margin: 5px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width:768px) {
+
+    .brand h1 {
+        font-size:40px;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .brand h1 {
+        font-size:32px;
+    }
+
+}

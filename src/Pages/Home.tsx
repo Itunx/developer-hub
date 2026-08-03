@@ -2,8 +2,7 @@ import Brand from "../Components/Login/Brand";
 import Hero from "../Components/Login/Hero";
 import FeatureGrid from "../Components/Login/FeatureGrid";
 import LoginForm from "../Components/Login/LoginForm";
-
-import "../App.css";
+import "./Home.css";
 import "../index.css";
 import PlatformStats from "../Components/Login/PlatformStats";
 import PlatformDiagram from "../Components/Login/PlatformDiagram";

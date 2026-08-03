@@ -17,60 +17,11 @@ body{
 
 /* ---------- Layout ---------- */
 
-.app-container{
 
-    min-height:100vh;
 
-    display:flex;
 
-    justify-content:center;
 
-    align-items:center;
 
-    gap:80px;
-
-    padding:60px;
-
-    background:
-    linear-gradient(
-    135deg,
-    #081524,
-    #0b2740,
-    #14385c
-    );
-}
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.brand-content{
-    display:flex;
-flex-direction:column;
-}
-
-.brand h1 {
-    margin: 0;
-    font-size: 2.4rem;
-    font-weight: 700;
-}
-
-.brand-subtitle {
-    margin-top: 12px;      /* Increase this if you want more space */
-    color: #9ca3af;
-    font-size: 1rem;
-}
-/* ---------- Left ---------- */
-
-.left-panel{
-
-    flex:1;
-
-    max-width:600px;
-}
-.idp{
- margin: 5px; 
-}
 .brand h1{
 
     font-size:54px;
@@ -93,9 +44,7 @@ flex-direction:column;
     color: #d1d5db;
 }
 
-.villain-description{
-    display: block;
-    text-align: center;}
+
 
 .hero-content{
 
@@ -105,13 +54,7 @@ flex-direction:column;
    Hero Layout
 =========================== */
 
-.content-section{
-    margin-top:60px;
 
-    display:flex;
-    flex-direction:column;
-    gap:40px;
-}
 .hero-content h2{
 
     font-size:60px;
@@ -229,11 +172,7 @@ transition:.3s;
 }
 
 
-.gradient-text{
-    background:linear-gradient(90deg,#3b82f6,#7c3aed);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
+
 //
 .signin-btn {
   background-color: #0b3d91; /* Deep blue */
@@ -253,14 +192,7 @@ transition:.3s;
 }
 /* ---------- Right ---------- */
 
-.right-panel{
 
-    flex:1;
-
-    display:flex;
-
-    justify-content:center;
-}
 .hid{
     margin:3px;
 }
@@ -416,33 +348,12 @@ button:hover{
 
 @media(max-width:1024px){
 
-.app-container{
 
-flex-direction:column;
 
-padding:40px;
 
-text-align:center;
 
-}
 
-.left-panel{
 
-max-width:100%;
-
-}
-
-.hero-content{
-
-margin-top:40px;
-
-}
-
-.hero-content h2{
-
-font-size:42px;
-
-}
 
 .card{
 
@@ -455,13 +366,6 @@ max-width:500px;
 
 @media(max-width:768px){
 
-.app-container{
-
-padding:20px;
-
-gap:40px;
-
-}
 
 .brand h1{
 
@@ -469,17 +373,8 @@ font-size:40px;
 
 }
 
-.hero-content h2{
 
-font-size:34px;
 
-}
-
-.hero-content p{
-
-font-size:17px;
-
-}
 
 .card{
 
@@ -503,15 +398,10 @@ height:50px;
 font-size:32px;
 }
 
-.hero-content h2{
 
-font-size:28px;
-}
 
-.hero-content p{
 
-font-size:15px;
-}
+
 
 .card{
 

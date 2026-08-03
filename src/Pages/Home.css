@@ -1,0 +1,99 @@
+/* ==========================
+   Home Layout
+========================== */
+
+.app-container{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:80px;
+
+    padding:60px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #081524,
+        #0b2740,
+        #14385c
+    );
+}
+
+.left-panel{
+
+    flex:1;
+
+    max-width:700px;
+}
+
+.right-panel{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+/* Controls spacing between sections */
+
+.content-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:40px;
+
+    margin-top:60px;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:1024px){
+
+.app-container{
+
+flex-direction:column;
+
+padding:40px;
+
+text-align:center;
+
+}
+
+.left-panel{
+
+max-width:100%;
+
+}
+
+.right-panel{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.app-container{
+
+padding:20px;
+
+gap:40px;
+
+}
+
+}

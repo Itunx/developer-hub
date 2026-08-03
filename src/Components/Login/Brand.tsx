@@ -1,4 +1,5 @@
 import Logo from "./logo";
+import "./styles/Brand.css";
 
 const Brand = () => {
   return (
