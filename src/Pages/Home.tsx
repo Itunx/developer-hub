@@ -2,44 +2,56 @@ import Brand from "../Components/Login/Brand";
 import Hero from "../Components/Login/Hero";
 import FeatureGrid from "../Components/Login/FeatureGrid";
 import LoginForm from "../Components/Login/LoginForm";
-import "./Home.css";
-import "../index.css";
 import PlatformStats from "../Components/Login/PlatformStats";
 import PlatformDiagram from "../Components/Login/PlatformDiagram";
 
+import "./Home.css";
+import "../index.css";
+
 function Home() {
-  return (
-    <div className="app-container">
+    return (
+        <div className="app-container">
 
-      {/* LEFT SIDE */}
-   <div className="left-panel">
+            {/* LEFT SIDE */}
+            <div className="left-panel">
 
-    <Brand />
+                <Brand />
 
-    <div className="content-section">
+                <div className="content-section">
 
-        <div className="hero-container">
-            <Hero />
-            <PlatformDiagram />
+                    {/* HERO AREA */}
+                    <div className="hero-layout">
+
+                        <div className="hero-main">
+                            <Hero />
+                        </div>
+
+                        <div className="hero-diagram">
+                            <PlatformDiagram />
+                        </div>
+
+                    </div>
+
+                    {/* FEATURES */}
+                    <FeatureGrid />
+
+                    {/* PLATFORM STATS */}
+                    <PlatformStats />
+
+                </div>
+
+            </div>
+
+
+            {/* RIGHT SIDE */}
+            <div className="right-panel">
+
+                <LoginForm />
+
+            </div>
+
         </div>
-
-        <FeatureGrid />
-
-        <PlatformStats />
-
-    </div>
-
-</div>
-      {/* RIGHT SIDE */}
-      <div className="right-panel">
-        <LoginForm />
-      </div>
-
-    </div>
-  );
+    );
 }
 
 export default Home;
-
-
-

@@ -1,99 +1,208 @@
 /* ==========================
-   Home Layout
+   MAIN APP CONTAINER
 ========================== */
 
-.app-container{
+.app-container {
+    min-height: 100vh;
 
-    min-height:100vh;
+    display: flex;
 
-    display:flex;
+    justify-content: center;
 
-    justify-content:center;
+    align-items: flex-start;
 
-    align-items:center;
+    gap: 70px;
 
-    gap:80px;
-
-    padding:60px;
+    padding: 60px;
 
     background:
-    linear-gradient(
-        135deg,
-        #081524,
-        #0b2740,
-        #14385c
-    );
+        linear-gradient(
+            135deg,
+            #081524,
+            #0b2740,
+            #14385c
+        );
+
+    box-sizing: border-box;
 }
 
-.left-panel{
-
-    flex:1;
-
-    max-width:700px;
-}
-
-.right-panel{
-
-    flex:1;
-
-    display:flex;
-
-    justify-content:center;
-}
-
-/* Controls spacing between sections */
-
-.content-section{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:40px;
-
-    margin-top:60px;
-}
 
 /* ==========================
-   Responsive
+   LEFT PANEL
 ========================== */
 
-@media(max-width:1024px){
+.left-panel {
 
-.app-container{
+    flex: 1;
 
-flex-direction:column;
+    max-width: 750px;
 
-padding:40px;
+    min-width: 0;
+}
 
-text-align:center;
+
+/* ==========================
+   RIGHT PANEL
+========================== */
+
+.right-panel {
+
+    flex: 0 0 450px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+
+/* ==========================
+   CONTENT SECTION
+========================== */
+
+.content-section {
+
+    margin-top: 60px;
+}
+
+
+/* ==========================
+   HERO LAYOUT
+========================== */
+
+.hero-layout {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    margin-bottom: 70px;
+}
+
+
+/* ==========================
+   HERO MAIN
+========================== */
+
+.hero-main {
+
+    flex: 1;
+
+    max-width: 500px;
+}
+
+
+/* ==========================
+   PLATFORM DIAGRAM
+========================== */
+
+.hero-diagram {
+
+    flex: 0 0 220px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 1100px) {
+
+    .app-container {
+
+        gap: 40px;
+
+        padding: 40px;
+    }
+
+    .right-panel {
+
+        flex: 0 0 400px;
+    }
+
+    .hero-layout {
+
+        gap: 20px;
+    }
 
 }
 
-.left-panel{
 
-max-width:100%;
+@media (max-width: 900px) {
+
+    .app-container {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        padding: 40px 25px;
+    }
+
+    .left-panel {
+
+        width: 100%;
+
+        max-width: 700px;
+    }
+
+    .right-panel {
+
+        width: 100%;
+
+        flex: none;
+    }
+
+    .hero-layout {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .hero-main {
+
+        max-width: 600px;
+    }
+
+    .hero-diagram {
+
+        margin-top: 20px;
+    }
 
 }
 
-.right-panel{
 
-width:100%;
+@media (max-width: 480px) {
 
-justify-content:center;
+    .app-container {
 
-}
+        padding: 25px 15px;
+    }
 
-}
+    .content-section {
 
-@media(max-width:768px){
+        margin-top: 40px;
+    }
 
-.app-container{
+    .hero-layout {
 
-padding:20px;
+        gap: 20px;
 
-gap:40px;
-
-}
+        margin-bottom: 40px;
+    }
 
 }

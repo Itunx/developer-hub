@@ -1,0 +1,145 @@
+.applications-page {
+  padding: 30px;
+  color: white;
+}
+
+.applications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.applications-header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.applications-header p {
+  margin-top: 8px;
+  color: #8fa3bf;
+}
+
+.new-application-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.application-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.application-stat-card {
+  background: #1d293b;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.application-stat-card span {
+  font-size: 22px;
+}
+
+.application-stat-card h2 {
+  margin: 12px 0 5px;
+}
+
+.application-stat-card p {
+  margin: 0;
+  color: #8fa3bf;
+}
+
+.applications-table-container {
+  background: #172235;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.applications-toolbar {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+}
+
+.applications-toolbar input,
+.applications-toolbar select {
+  background: #101827;
+  color: white;
+  border: 1px solid #334155;
+  border-radius: 7px;
+  padding: 12px;
+}
+
+.applications-toolbar input {
+  flex: 1;
+}
+
+.applications-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.applications-table th,
+.applications-table td {
+  padding: 18px;
+  text-align: left;
+  border-top: 1px solid #293548;
+}
+
+.applications-table th {
+  color: #8fa3bf;
+  font-size: 14px;
+}
+
+.applications-table td {
+  color: #dbe5f0;
+}
+
+.applications-table td strong {
+  display: block;
+}
+
+.applications-table td span {
+  display: block;
+  margin-top: 5px;
+  color: #8294aa;
+  font-size: 13px;
+}
+
+.status {
+  display: inline-block !important;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.status.running {
+  background: #123c2b;
+  color: #4ade80;
+}
+
+.status.paused {
+  background: #42350d;
+  color: #facc15;
+}
+
+.status.failed {
+  background: #431d23;
+  color: #f87171;
+}
+
+.applications-table button {
+  background: #263449;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-right: 6px;
+  cursor: pointer;
+}

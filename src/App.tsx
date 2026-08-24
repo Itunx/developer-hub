@@ -5,14 +5,47 @@ import DashboardLayout from "./Components/dashboard/DashboardLayout";
 import "./App.css";
 import "./index.css";
 import Home from "./Pages/Home";
+import Applications from "./Pages/Applications";
+import Deployments from "./Pages/Deployments";
 
 export default function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/dashboard" element={<DashboardLayout><DashboardPage/></DashboardLayout>} />
-      </Routes>
+     <Routes>
+
+  <Route
+    path="/"
+    element={<Home />}
+  />
+
+  <Route
+    path="/dashboard"
+    element={
+      <DashboardLayout>
+        <DashboardPage />
+      </DashboardLayout>
+    }
+  />
+
+  <Route
+    path="/dashboard/applications"
+    element={
+      <DashboardLayout>
+        <Applications />
+      </DashboardLayout>
+    }
+  />
+
+  <Route
+    path="/dashboard/deployments"
+    element={
+      <DashboardLayout>
+        <Deployments />
+      </DashboardLayout>
+    }
+  />
+
+</Routes>
     </Router>
   );
 }

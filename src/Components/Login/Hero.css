@@ -3,26 +3,41 @@
 ========================== */
 
 .hero-content {
-    margin-top: 80px;
+    margin-top: 55px;
+    max-width: 560px;
 }
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+/* ==========================
+   Badge
+========================== */
 
 .hero-badge {
     display: inline-block;
 
-    padding: 10px 18px;
+    padding: 9px 17px;
+    margin-bottom: 28px;
 
     border-radius: 999px;
 
-    background: rgba(59,130,246,.08);
+    background: rgba(59, 130, 246, 0.08);
+    border: 1px solid rgba(59, 130, 246, 0.25);
 
-    border: 1px solid rgba(59,130,246,.2);
+    color: #ffffff;
 
-    color: white;
-
+    font-size: 16px;
     font-weight: 600;
 
-    margin-bottom: 30px;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.05);
 }
+
+/* ==========================
+   Hero Title
+========================== */
 
 .hero-title {
     margin: 0;
@@ -31,103 +46,141 @@
     text-align: left;
 
     font-size: 5rem;
-
-    line-height: .9;
+    line-height: 0.9;
 
     font-weight: 800;
 
     letter-spacing: -4px;
+
+    color: #f8fafc;
 }
 
-.hero-description {
-
-    max-width: 550px;
-
-    width: 100%;
-
-    line-height: 1.8;
-
-    color: #d1d5db;
-}
-
-.hero-content p {
-
-    font-size: 20px;
-
-    line-height: 1.8;
-
-    color: #cbd5e1;
-
-    max-width: 520px;
-}
-
-.villain-description {
-
-    display: block;
-
-    text-align: center;
-}
+/* ==========================
+   Gradient Text
+========================== */
 
 .gradient-text {
-
     background: linear-gradient(
         90deg,
-        #3b82f6,
-        #7c3aed
+        #3b82f6 0%,
+        #6366f1 45%,
+        #7c3aed 100%
     );
 
     -webkit-background-clip: text;
+    background-clip: text;
+
     -webkit-text-fill-color: transparent;
+
+    color: transparent;
 }
 
+/* ==========================
+   Description
+========================== */
+
+.hero-description {
+    max-width: 520px;
+
+    margin-top: 22px;
+
+    font-size: 20px;
+
+    line-height: 1.55;
+
+    color: #cbd5e1;
+}
+
+/* Last line */
+.villain-description {
+    display: inline;
+}
+.platform-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+
+    width: 100%;
+}.diagram-center {
+    position: relative;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* ==========================
    Responsive
 ========================== */
 
-@media(max-width:1024px){
+@media (max-width: 1200px) {
 
-.hero-content{
+    .hero-content {
+        margin-top: 45px;
+    }
 
-margin-top:40px;
-
-}
-
-.hero-content h2{
-
-font-size:42px;
+    .hero-title {
+        font-size: 4.5rem;
+    }
 
 }
 
-}
+@media (max-width: 1024px) {
 
-@media(max-width:768px){
+    .hero-content {
+        margin-top: 35px;
+    }
 
-.hero-content h2{
+    .hero-title {
+        font-size: 4rem;
+        letter-spacing: -3px;
+    }
 
-font-size:34px;
-
-}
-
-.hero-content p{
-
-font-size:17px;
-
-}
-
-}
-
-@media(max-width:480px){
-
-.hero-content h2{
-
-font-size:28px;
+    .hero-description {
+        font-size: 18px;
+    }
 
 }
 
-.hero-content p{
+@media (max-width: 768px) {
 
-font-size:15px;
+    .hero-content {
+        margin-top: 30px;
+        max-width: 100%;
+    }
+
+    .hero-badge {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .hero-title {
+        font-size: 3.2rem;
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 17px;
+        line-height: 1.6;
+    }
 
 }
+
+@media (max-width: 480px) {
+
+    .hero-title {
+        font-size: 2.6rem;
+        letter-spacing: -1.5px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
 
 }

@@ -1,30 +1,31 @@
-
 import "./FeatureCard.css";
 
 type FeatureCardProps = {
-  icon: string;
-  title: string;
-  description: string;
+    icon: React.ReactNode;
+    title: string;
+    description: string;
 };
 
 const FeatureCard = ({
-  icon,
-  title,
-  description,
+    icon,
+    title,
+    description,
 }: FeatureCardProps) => {
-  return (
+    return (
+        <div className="feature-card">
 
-    <div className="feature-card">
-      <div className="feature-icon">
-        {icon}
-      </div>
+            <div className="feature-icon">
+                {icon}
+            </div>
 
-      <div className="feature-content">
-        <h3>{title}</h3>
-        <h5>{description}</h5>
-      </div>
-    </div>
-  );
+            <div className="feature-content">
+                <h3>{title}</h3>
+
+                <p>{description}</p>
+            </div>
+
+        </div>
+    );
 };
 
 export default FeatureCard;

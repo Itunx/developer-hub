@@ -1,42 +1,48 @@
 import "./FeatureGrid.css";
 import FeatureCard from "./FeatureCard";
 
-const features = [
-  {
-    icon: "☸️",
-    title: "Kubernetes Native",
-    description: "Deploy and scale containers with ease.",
-  },
-  {
-    icon: "⬢",
-    title: "Terraform Automation",
-    description: "Infrastructure as Code, done right.",
-  },
-  {
-    icon: "AWS",
-    title: "AWS Cloud Integration",
-    description: "Manage cloud infrastructure effortlessly.",
-  },
-  {
-    icon: "GH",
-    title: "GitHub Integration",
-    description: "Connect repositories and automate delivery.",
-  },
-];
-
 const FeatureGrid = () => {
-  return (
-    <div className="feature-list">
-      {features.map((feature) => (
-        <FeatureCard
-          key={feature.title}
-          icon={feature.icon}
-          title={feature.title}
-          description={feature.description}
-        />
-      ))}
-    </div>
-  );
+    return (
+        <section className="feature-grid">
+
+            <FeatureCard
+                icon="☸️"
+                title="Kubernetes"
+                description="Manage clusters and workloads"
+            />
+
+            <FeatureCard
+                icon="☁️"
+                title="AWS Cloud"
+                description="Infrastructure at scale, secure and reliable"
+            />
+
+            <FeatureCard
+                icon="🏗️"
+                title="Terraform"
+                description="Infrastructure as Code, done right"
+            />
+
+            <FeatureCard
+                icon="🐳"
+                title="Docker Registry"
+                description="Store and manage container images"
+            />
+
+            <FeatureCard
+                icon="◉"
+                title="GitHub"
+                description="Source control and automation"
+            />
+
+            <FeatureCard
+                icon="📊"
+                title="Monitoring"
+                description="Observability and real-time insights"
+            />
+
+        </section>
+    );
 };
 
 export default FeatureGrid;

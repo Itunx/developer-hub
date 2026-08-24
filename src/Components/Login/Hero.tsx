@@ -7,15 +7,17 @@ const Hero = () => {
         ✨ One Platform. Endless Possibilities.
       </div>
 
-      <h2 className="hero-title">
-        Build.
-        <br />
-        Deploy.
-        <br />
-        <span className="gradient-text">
-          Scale.
-        </span>
-      </h2>
+<h2 className="hero-title">
+    Build.
+    <br />
+    Deploy.
+    <br />
+    Observe.
+    <br />
+    <span className="gradient-text">
+        Scale.
+    </span>
+</h2>
 
       <p className="hero-description">
         A unified platform for developers to build

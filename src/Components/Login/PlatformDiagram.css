@@ -3,76 +3,84 @@
 ========================== */
 
 .platform-diagram {
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-top: 40px;
+    margin-top: 10px;
 }
+
+/* Main diagram circle */
 
 .diagram-center {
     position: relative;
 
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
 
     border-radius: 50%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background: rgba(59, 130, 246, 0.06);
+
+    border: 1px solid rgba(59, 130, 246, 0.15);
 }
 
-.cloud {
-    position: absolute;
+/* Center Kubernetes icon */
 
-    top: -25px;
-
-    padding: 10px 20px;
-
-    border-radius: 999px;
-
-    background: #1e293b;
-
-    border: 1px solid rgba(255,255,255,.08);
+.diagram-center {
+    font-size: 28px;
 }
+
+/* Surrounding icons */
 
 .diagram-icon {
-    width: 64px;
-    height: 64px;
+    position: absolute;
 
-    border-radius: 16px;
+    font-size: 20px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background: #16233d;
-
-    border: 1px solid rgba(255,255,255,.08);
-
-    transition: .3s;
 }
 
-.diagram-icon:hover {
-    transform: scale(1.05);
+/* Cloud */
 
-    border-color: #3b82f6;
+.cloud {
+    top: -30px;
+    left: 50%;
+
+    transform: translateX(-50%);
 }
 
-.kubernetes {
-    position: absolute;
-    top: 0;
+/* Database */
+
+.database {
+    bottom: -30px;
+    left: 50%;
+
+    transform: translateX(-50%);
 }
 
-.terraform {
-    position: absolute;
-    left: 0;
-    bottom: 30px;
+/* Code */
+
+.code {
+    left: -35px;
+    top: 50%;
+
+    transform: translateY(-50%);
 }
 
-.github {
-    position: absolute;
-    right: 0;
-    bottom: 30px;
-}
+/* Package */
+
+.package {
+    right: -35px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}   

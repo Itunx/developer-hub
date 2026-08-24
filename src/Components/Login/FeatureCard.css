@@ -4,49 +4,104 @@
 
 .feature-card {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 16px;
 
     padding: 20px;
 
-    background: #16233d;
-    border: 1px solid rgba(255,255,255,.08);
-    border-radius: 16px;
+    min-height: 110px;
 
-    transition: .3s;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+
+    border-radius: 12px;
+
+    background: rgba(15, 23, 42, 0.65);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
 }
+
+/* Hover */
 
 .feature-card:hover {
-    transform: translateY(-4px);
-    border-color: #3b82f6;
+    transform: translateY(-3px);
+
+    border-color: rgba(59, 130, 246, 0.55);
+
+    background: rgba(20, 30, 55, 0.85);
 }
+
+/* ==========================
+   Icon
+========================== */
 
 .feature-icon {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     width: 52px;
     height: 52px;
 
+    flex-shrink: 0;
+
     border-radius: 12px;
 
-    background: rgba(59,130,246,.12);
+    background: rgba(59, 130, 246, 0.12);
 
     font-size: 1.6rem;
+}
 
-    flex-shrink: 0;
+/* ==========================
+   Content
+========================== */
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
 }
 
 .feature-content h3 {
-    margin-bottom: 6px;
+    margin: 0;
+
     font-size: 1rem;
-    color: white;
+
+    font-weight: 600;
+
+    color: #ffffff;
 }
 
-.feature-content h5 {
-    font-size: .85rem;
+.feature-content p {
+    margin: 0;
+
+    font-size: 0.85rem;
+
     font-weight: 400;
-    color: #94a3b8;
+
     line-height: 1.5;
+
+    color: #94a3b8;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 768px) {
+
+    .feature-card {
+        padding: 16px;
+    }
+
+    .feature-icon {
+        width: 46px;
+        height: 46px;
+
+        font-size: 1.4rem;
+    }
+
 }
